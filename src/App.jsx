@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './views/Home';
 import Details from './views/Details';
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from './context/ThemeContext';
 import { useContext, useEffect } from 'react';
 
 function App() {

@@ -7,7 +7,7 @@ import { useDebounce } from '../hooks/useDebounced';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext';
 
 function Home() {
     const [countries, setCountries] = useState([]);

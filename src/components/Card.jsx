@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext';
 
 const Card = ({ imgSrc, name, population, region, capital }) => {
     const { theme } = useContext(ThemeContext);
