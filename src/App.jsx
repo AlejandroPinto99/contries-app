@@ -15,7 +15,7 @@ function App() {
     if(theme === 'dark') {
       document.body.classList.add('bg-[#202C36]')
     } else {
-      document.body.classList.remove('bg-[#202C36]')
+      document.body.classList.remove('bg-[#202C36]');
     }
   }, [theme])
   
@@ -25,7 +25,7 @@ function App() {
         <h1 className="text-xs font-extrabold md:text-lg">Where in the World?</h1>
         <button type="button"
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="flex items-center light:bg-white dark:bg-[#2B3844] font-semibold text-xs space-x-2"
+          className="flex items-center light:bg-white dark:bg-[#2B3844] font-semibold text-xs space-x-2 cursor-pointer"
         >
             { theme === 'light' ? <SunIcon className="h-4 w-4 md:h-8 md:w-8"/> : <MoonIcon className="h-4 w-4 md:h-8 md:w-8"/> }
             <p className="md:text-lg">{theme === 'light' ? 'Light Mode' : 'Dark Mode'}</p>
